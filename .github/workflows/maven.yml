@@ -24,8 +24,8 @@ jobs:
     - name: Set up JDK 11
       uses: actions/setup-java@v3
       with:
-        java-version: '1.8'
-        distribution: 'temurin'
+        java-version: '8.0'
+        distribution: 'me'
         cache: maven
     - name: Build with Maven
       run: mvn clean install -DskipTests -pl common-kafka -am
